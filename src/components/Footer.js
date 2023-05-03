@@ -44,31 +44,31 @@ function Footer() {
                   District, <br /> Abuja.
                 </address>
 
-                <a
-                  href="+234 8041333380"
+                <Link
+                  to="+234 8041333380"
                   className="mt-3 d-block mb-0 text-white"
                 >
                   +234 8041333380
-                </a>
-                <a
-                  href="mailto:jpstore3380@gmail.com"
+                </Link>
+                <Link
+                  to="mailto:jpstore3380@gmail.com"
                   className="mt-1 d-block mb-2 text-white"
                 >
                   jpstore3380@gmail.com
-                </a>
+                </Link>
                 <div className="sociao-icons d-flex align-items-center gap-30 mt-3">
-                  <a className="text-white" href="#">
+                  <Link className="text-white" to="#">
                     <BsLinkedin className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
+                  </Link>
+                  <Link className="text-white" to="#">
                     <BsInstagram className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
+                  </Link>
+                  <Link className="text-white" to="#">
                     <BsTwitter className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
+                  </Link>
+                  <Link className="text-white" to="#">
                     <BsYoutube className="fs-4" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
