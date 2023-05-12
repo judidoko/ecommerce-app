@@ -31,11 +31,13 @@ function Header() {
           <div className="row align-items-center">
             <div className="col-2">
               <h1>
-                <Link className="text-white">JP Store</Link>
+                <Link to="/" className="text-white">
+                  JP Store
+                </Link>
               </h1>
             </div>
             <div className="col-5">
-              <div class="input-group">
+              <div className="input-group">
                 <input
                   type="text"
                   className="form-control py-2"
@@ -130,8 +132,8 @@ function Header() {
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/">Our Store</NavLink>
-                    <NavLink to="/">Blogs</NavLink>
+                    <NavLink to="/store">Our Store</NavLink>
+                    <NavLink to="/blogs">Blogs</NavLink>
                     <NavLink to="/contact">Contact Us</NavLink>
                   </div>
                 </div>

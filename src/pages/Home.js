@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { TbSettingsAutomation, TbTruckDelivery } from "react-icons/tb";
 import { BsCreditCard, BsGift, BsHeadset } from "react-icons/bs";
 import Marquee from "react-fast-marquee";
+import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 
 function Home() {
   return (
@@ -144,7 +147,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="home-wrapper-3 py-5">
+      <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -210,7 +213,170 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="marque-wrapper py-5"></section>
+      {/* Featured Collection Section */}
+      <section className="featured-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Featured Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative ">
+                <img
+                  src="images/smart-banner.jpg"
+                  alt="Smart Watches Series Banner"
+                  className="img-fluid w-100"
+                />
+                <div className="famous-content position-absolute">
+                  <h5>Small Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>
+                    From <span>&#8358;</span>85,000/mo. 24 mo.*
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative ">
+                <img
+                  src="images/laptop-banner3.jpg"
+                  alt="Smart Watches Series Banner"
+                  className="img-fluid w-100"
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="">Studio Display</h5>
+                  <h6 className="">600 nits of brightness</h6>
+                  <p className="">55-inch 5k Retina display</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative ">
+                <img
+                  src="images/iphone-banner.jpg"
+                  alt="Smart Watches Series Banner"
+                  className="img-fluid w-100"
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="">Smart Phones</h5>
+                  <h6 className="">Smartphone 13 pro</h6>
+                  <p className="">
+                    Now in Gold. From <span>&#8358;</span>700,00 or{" "}
+                    <span>&#8358;</span>1,000,0000 for 24 mo Footnote*
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative ">
+                <img
+                  src="images/jambox-banner1.jpg"
+                  alt="Smart Watches Series Banner"
+                  className="img-fluid w-100"
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Home Speakers</h5>
+                  <h6 className="text-dark">Room filling sound.</h6>
+                  <p className="text-dark">
+                    From <span>&#8358;</span>150,00 or
+                    <span>&#8358;</span>500,0000/mo. for 12 mo.*
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Specail Collections */}
+      <section className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+      {/* Popular Products section */}
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      {/* Marquee Section */}
+      <section className="marquee-wrapper py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marquee-inner-wapper bg-white p-2 card-wrapper">
+                <Marquee className="d-flex">
+                  <div className="mx-4 w-25 h-20">
+                    <img src="images/brand-1.jpg" alt="brands Logo" />
+                  </div>
+                  <div className="mx-4 w-25 h-20">
+                    <img src="images/brand-2.jpg" alt="brands Logo" />
+                  </div>
+                  <div className="mx-4 w-25 h-20">
+                    <img src="images/brand-3.jpg" alt="brands Logo" />
+                  </div>
+                  <div className="mx-4 w-25 h-20">
+                    <img src="images/brand-4.jpg" alt="brands Logo" />
+                  </div>
+                  <div className="mx-4 w-25 h-20">
+                    <img src="images/brand-5.jpg" alt="brands Logo" />
+                  </div>
+                  <div className="mx-4 w-25 h-20">
+                    <img src="images/brand-6.jpg" alt="brands Logo" />
+                  </div>
+                  <div className="mx-4 w-25 h-20">
+                    <img src="images/brand-7.jpg" alt="brands Logo" />
+                  </div>
+                  <div className="mx-4 w-25 h-20">
+                    <img src="images/brand-8.jpg" alt="brands Logo" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="blog-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <h3 className="section-heading">Our Latest Blogs</h3>
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
